@@ -1,0 +1,28 @@
+/* === Tailwind Directives === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ================================
+Global Styles (Opsional & Aman)
+================================ */
+/* Warna background dasar */
+body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+}
+/* Style untuk link */
+a {
+    @apply text-blue-600 hover:text-blue-800 transition;
+}
+/* ⚠ PERINGATAN:
+Jangan override tombol secara global,
+karena dapat merusak style default Tailwind
+untuk semua komponen.
+Maka kita gunakan styling MINIMAL saja.
+*/
+button {
+    @apply transition;
+}
+/* Jika ingin default style button,
+buat class khusus, bukan global
+contoh: .btn-primary, .btn-secondary
+*/
